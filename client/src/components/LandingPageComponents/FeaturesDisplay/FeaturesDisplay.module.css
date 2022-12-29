@@ -1,0 +1,58 @@
+/* Main cnotainer */
+.container{
+    position: relative;
+    height: 100%;
+    width: 20vw;
+    top: 0%;
+    color: white;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+}
+/* Button styling */
+.btnContainer{
+    position: absolute;
+    height: auto;
+    width: 10%;
+    right: 0%;
+    bottom: 2.5vh;
+    display: flex;
+    justify-content: center;
+}
+
+.btnLeft{
+     color: rgb(150,150,150);
+}
+
+.btnRight{
+    margin-left: 2vh;
+}
+
+.btn{
+    cursor: pointer;
+    transform: scaleY(1.9);
+    font-weight: 900;
+}
+/* Frame styling */
+.frame_title{
+    font-size: 2.5vh;
+    letter-spacing: 0.5vh;
+    font-weight: 700;
+}
+
+.frame_description{
+    position: absolute;
+    right: 0;
+    top: 5vh;
+    font-size: 1.75vh;
+    width: 70%;
+    color: rgb(170,170,170);  
+}
+
+.current_frame{
+    position: absolute;
+    right: 0;
+    top: 13vh;
+    margin-top: 2vh;
+    color: rgb(170,170,170);  
+}

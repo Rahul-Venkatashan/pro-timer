@@ -1,0 +1,19 @@
+.btn{
+    outline: none;
+    padding: 1vh 2vh;
+    font-size: 1.5vh;
+    border-radius: 0.5vh;
+    background: rgba(255,255,255,0.01);
+    color: white;
+    border:rgba(255,255,255, 0.1) 0.3vh solid ;
+    letter-spacing: 0.2vh;
+    cursor: pointer;
+    transition: 0.2s all ease-in-out;
+    font-weight: 700;
+    width: 10vw;
+}
+
+.btn:hover{
+    background-color: white;
+    color: black;
+}
