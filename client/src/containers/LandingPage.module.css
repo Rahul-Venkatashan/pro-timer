@@ -3,6 +3,8 @@
     width: 100vw;
     background-color: black;
     display: flex;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 }
 
 .earphones_img{
@@ -22,7 +24,7 @@
     transform: translate(-50%, -50%);
     display: flex;
     justify-content: space-between;
-    /* background-color: red; */
+    overflow: hidden;
 }
 
 .bx1{

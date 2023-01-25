@@ -1,0 +1,95 @@
+.container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.sub_container{ 
+    position: relative;
+    width: 40vh;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+
+.email_container{
+    transform: translateX(100vw);
+    animation: slideIn 0.5s ease-in-out forwards;
+}
+
+.password_container{
+    position: relative;
+    transform: translateX(100vw);
+    animation: slideIn 0.5s ease-in-out forwards;
+    animation-delay: 0.5s;
+}
+
+.forgot_password{
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: rgb(100,100,100);
+    cursor: pointer;
+    font-size: 2vh;
+    transition: 0.2s all ease-in-out;
+}
+
+.forgot_password:hover{
+    color: white;
+    letter-spacing: 0.3vh;
+    font-weight: 500;
+}
+.input{
+    width: 100%;
+    border: none;
+    padding: none;
+    outline: none;
+    background-color: transparent;
+    border-bottom: 0.3vh solid rgb(150,150,150);
+    color: white;
+    padding-bottom: 1vh;
+    font-size: 2.5vh;
+}
+
+.input::placeholder{
+    font-size: 2.5vh;
+    text-align: left;
+    font-weight: 200;
+}
+
+.sumbit_handler{
+    position: relative;
+    top: 5vh;
+    width: 100%;
+    padding: 1.25vh;
+    border: 0.2vh solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.3s ease;
+    font-size: 2.4vh;
+    text-transform: uppercase;
+    transform: translateX(100vw);
+    animation: slideIn 0.5s ease-in-out forwards;
+    animation-delay: 1s;
+}
+
+
+.sumbit_handler:hover{
+    background-color: white;
+    color: black;
+    font-weight: 700;
+    letter-spacing: 0.5vh;
+}
+
+@keyframes slideIn {
+    100%{
+        transform: translateX(0%);
+    }
+}

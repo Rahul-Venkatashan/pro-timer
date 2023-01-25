@@ -6,6 +6,7 @@
     color: white;
     width: 100%;
     height: 100%;
+    overflow: hidden;
 }
 
 .line_one{
@@ -14,6 +15,8 @@
     line-height: auto;
     text-transform: uppercase;
     letter-spacing: 0.5vh;
+    transform: translateX(-100%);
+    animation: slideIn 1s ease forwards;
 }
 
 .line_two{
@@ -23,6 +26,9 @@
     line-height: 16vh;
     font-family: 'Times New Roman' !important;
     position: relative;
+    transform: translateY(200%);
+    animation: slideIn 1s ease forwards;
+    animation-delay: 1s;
 }
 
 .line_two::after{
@@ -42,6 +48,9 @@
     font-size: 1.75vh;
     width: 50%;
     letter-spacing: 0.1vh;
+    transform: translateX(-100%);
+    animation: slideIn 1s ease forwards;
+    animation-delay: 2s;
 }
 
 .bx1{
@@ -52,4 +61,10 @@
 
 .sub_bx2{
     background-color: red;
+}
+
+@keyframes slideIn {
+    100%{
+        transform: translate(0%);
+    }
 }

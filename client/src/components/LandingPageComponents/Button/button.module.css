@@ -11,9 +11,19 @@
     transition: 0.2s all ease-in-out;
     font-weight: 700;
     width: 10vw;
+    transform: translateX(-100%);
+    animation: slideIn 1s ease forwards;
+    animation-delay: 2s;
 }
+
 
 .btn:hover{
     background-color: white;
     color: black;
+}
+
+@keyframes slideIn {
+    100%{
+        transform: translateX(0%);
+    }
 }
